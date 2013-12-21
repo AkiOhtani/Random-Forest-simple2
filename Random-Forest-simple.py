@@ -96,11 +96,11 @@ with open('features.tab', 'r') as fp:
 #             test_data.append(node)
 #             test_key.append(keyword)
 #---------------------------------#
-features = array(features_)
-labels = array(labels_)
+features = numpy.array(features_)
+labels = numpy.array(labels_)
 
-predict_data_array = array(predict_data)
-predict_label_array = array(predict_label)
+predict_data_array = numpy.array(predict_data)
+predict_label_array = numpy.array(predict_label)
 
 time2 = time.clock()
 
