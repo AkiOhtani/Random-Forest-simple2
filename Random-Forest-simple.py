@@ -162,7 +162,7 @@ pylab.show()
 #graph visualize
 dot_data = StringIO.StringIO()
 
-tree.export_graphviz(model.estimators_[0], out_file=dot_data, feature_names = feature_names)
+tree.export_graphviz(model.estimators_[0], out_file=dot_data, feature_name = feature_names)
 
 graph = pydot.graph_from_dot_data(dot_data.getvalue())
 try :
